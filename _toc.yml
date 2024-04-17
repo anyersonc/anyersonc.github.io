@@ -4,9 +4,7 @@
 format: jb-book
 root: Content
 chapters:
-- file: intro
-- file: introCh2
-  sections:
-  - file: simtutorial
 - file: PNjunction
+- file: workedexample
+- file: misconceptions
 - file: References
