@@ -6,5 +6,4 @@ root: Content
 chapters:
 - file: PNjunction
 - file: workedexample
-- file: misconceptions
 - file: References
