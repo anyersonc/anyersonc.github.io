@@ -554,7 +554,7 @@ Write here the answer:
 <p>If we neglect the effects of the edges in our ideal junction, the electric field has only the <span class="math notranslate nohighlight">\(x\)</span> dimension component, so, the equation <span class="math notranslate nohighlight">\((11.7)\)</span> could be expressed as <span class="math notranslate nohighlight">\((11.8)\)</span> where the <span class="math notranslate nohighlight">\(\epsilon_r\)</span> is the relative permittivity of the semiconductor and <span class="math notranslate nohighlight">\(\epsilon_0\)</span> is the permittivity of free space.</p>
 <div class="math notranslate nohighlight">
 \[ \frac{\mathrm{d}\mathscr{E}}{\mathrm{d}x} = \frac{\rho}{\epsilon_r \epsilon_0}  \tag{11.8} \]</div>
-<p>The equation <span class="math notranslate nohighlight">\((11.8)\)</span> shows that the slope of the electric field is proportional to the charge density <span class="math notranslate nohighlight">\(\rho\)</span>, and if we take into account that the charge density is approximately zero outside the depletion region, the electric field there must be constant, which in fact, is stated that the electric field in a small distance from the outside edges of the depletion region is exactly zero. Then, if we define the <span class="math notranslate nohighlight">\(-x_p\)</span> and <span class="math notranslate nohighlight">\(x_n\)</span> to be the left and right sides of the depletion region, the electric field of the region can be found of integrating <span class="math notranslate nohighlight">\((11.8)\)</span>, and if we are interested in any point, called <span class="math notranslate nohighlight">\(f\)</span> then our integral will be defined bewteen <span class="math notranslate nohighlight">\(-x_p\)</span> to <span class="math notranslate nohighlight">\(f\)</span> as in the equation <span class="math notranslate nohighlight">\(11.9\)</span>, which curve is presented in the Figure (c).</p>
+<p>The equation <span class="math notranslate nohighlight">\((11.8)\)</span> shows that the slope of the electric field is proportional to the charge density <span class="math notranslate nohighlight">\(\rho\)</span>, and if we take into account that the charge density is approximately zero outside the depletion region, the electric field there must be constant, which in fact, is stated that the electric field in a small distance from the outside edges of the depletion region is exactly zero. Then, if we define the <span class="math notranslate nohighlight">\(-x_p\)</span> and <span class="math notranslate nohighlight">\(x_n\)</span> to be the left and right sides of the depletion region, the electric field of the region can be found of integrating <span class="math notranslate nohighlight">\((11.8)\)</span>, and if we are interested in any point, called <span class="math notranslate nohighlight">\(f\)</span> then our integral will be defined bewteen <span class="math notranslate nohighlight">\(-x_p\)</span> to <span class="math notranslate nohighlight">\(f\)</span> as in the equation <span class="math notranslate nohighlight">\((11.9)\)</span>, which curve is presented in the Figure (c).</p>
 <div class="math notranslate nohighlight">
 \[ \mathscr{E}_x ( f )= \int_{-x_p}^{f} \frac{\rho}{\epsilon_r\epsilon_0} \mathrm{d}x \tag{11.9} \]</div>
 <p>Hence, the change in voltage with increasing <span class="math notranslate nohighlight">\(x\)</span> can be calculated in a path as <span class="math notranslate nohighlight">\((11.10)\)</span></p>
@@ -603,11 +603,9 @@ Write here the answer:
 <h2>Depletion Width<a class="headerlink" href="#depletion-width" title="Link to this heading">#</a></h2>
 <p>In general the charge density within the depletion region is not known ahead of time because it depends on the carrier concentrations p and n which in turn depend on the electric potential.
 In some cases, we may be able to write expressions for p and n as a function of x which allow for a closed form solution to (11.25), but more often we apply a simple approximation to the charge carriers known as the depletion approximation.</p>
-<p>Equation 11.25</p>
 <div class="math notranslate nohighlight">
 \[ \frac{\mathrm{d}\mathscr{E}_x}{\mathrm{d}x} = \frac{\rho}{\epsilon_r \epsilon_0} = \frac{q}{\epsilon_r\epsilon_0 (p-n+N_D-N_A)}  \tag{11.25}\]</div>
 <p>Under the depletion region approximation, the total charge density <span class="math notranslate nohighlight">\(\rho\)</span>  of a pn step junction takes on a squared off form relative to its exact value. Stated formally:</p>
-<p>Equation 11.26</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} \rho = \Biggl\{\begin{array}{rc}
 0 &amp; \mathrm{if} \space x \leq -x_p \mathrm{or} \space x \geq x_n
@@ -618,23 +616,18 @@ qN_D &amp; \mathrm{if} \space 0 \leq x \leq x_n
 <div class="math notranslate nohighlight">
 \[ Q_P^{-} = Q_n^{+} \tag{11.27}\]</div>
 <p>Due to the depletion approximation, these excess charges can be expressed as the charge density multiplied by the volume of the depletion region on each side of the junction.</p>
-<p>Equation 11.28</p>
 <div class="math notranslate nohighlight">
 \[ qN_AV_\mathrm{P}=qN_DV_n \tag{11.28}\]</div>
 <p>The volume of the depletion region on a given side of the junction is equal to the depletion width of that side times the cross-sectional area of the device, which is assumed to be constant.</p>
-<p>Equation 11.29</p>
 <div class="math notranslate nohighlight">
 \[ \begin{array}{ll} V_\mathrm{P}=x_\mathrm{P}A, &amp; V_\mathrm{n}=x_\mathrm{n}A \end{array} \tag{11.29}\]</div>
 <p>By dropping the area from each side of the equation, the charge balance between each side can be expressed as</p>
-<p>Equation 11.30</p>
 <div class="math notranslate nohighlight">
 \[ qN_Ax_\mathrm{P} = qN_Dx_\mathrm{n} \tag{11.30}\]</div>
 <p>Finally we can relate the relative widths of the depletion region on each side of the junction by solving for <span class="math notranslate nohighlight">\(x_n\)</span> in terms of <span class="math notranslate nohighlight">\(x_p\)</span> which results in</p>
-<p>Equation 11.31</p>
 <div class="math notranslate nohighlight">
 \[ x_\mathrm{n} = \frac{N_A}{N_D}x_\mathrm{P} \tag{11.31}\]</div>
 <p>At this point we have established one equation relating xp and xn (11.30), but because we have two unknowns, we require a second independent equation relating them in order to locate both endpoints of the depletion region. A second equation relating <span class="math notranslate nohighlight">\(x_p\)</span> and <span class="math notranslate nohighlight">\(x_n\)</span> can be found by considering the electric potential within the junction. In order to determine the electric potential, we will first need to establish the electric field, which can be calculated from the charge distribution. We begin by substituting the charge density we found using the depletion approximation into the one dimensional version of Gauss’s law in differential form from (11.25).</p>
-<p>Equation 11.33</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} \frac{\mathrm{d}\mathscr{E}_x}{\mathrm{d}x} = \frac{\rho}{\epsilon_r \epsilon_0} = \Biggl\{\begin{array}{rc}
 0 &amp; \mathrm{if} \space x \leq -x_p \mathrm{or} \space x \geq x_n
@@ -642,93 +635,84 @@ qN_D &amp; \mathrm{if} \space 0 \leq x \leq x_n
 \mathrm{qN_D}{\epsilon_r\epsilon_0} &amp; \mathrm{if}\space  0  \leq x \leq x_n
 \end{array} \end{split}\]</div>
 <p>The electric field is zero and constant outside of the depletion region. Thus the electric field must be zero at the depletion region edges -<span class="math notranslate nohighlight">\(x_p\)</span> and <span class="math notranslate nohighlight">\(x_n\)</span>. Then for the region between <span class="math notranslate nohighlight">\(-x_p\)</span> and <span class="math notranslate nohighlight">\(0\)</span> we have</p>
-<p>Equation 11.34</p>
 <div class="math notranslate nohighlight">
 \[ \frac{\mathrm{d}\mathscr{E}_x}{\mathrm{d}x} = -\frac{qN_A}{\epsilon_r\epsilon_0} \tag{11.34}\]</div>
 <p>We solve for <span class="math notranslate nohighlight">\(\mathscr{E}_x(x)\)</span> in the interval by separating variables and integrating each side. The lower bounds are fixed at <span class="math notranslate nohighlight">\(\mathscr{E}_x, = -x_p\)</span> while the upper bounds vary through the extent of the interval.</p>
-<p>Equation 11.35</p>
 <div class="math notranslate nohighlight">
 \[ \int_{0}^{\mathscr{E}_x(x)} \mathrm{d}\dot{\mathscr{E}_x} = \int_{-x_p}^{x} \frac{-qN_A}{\epsilon_r\epsilon_0} \mathrm{d}\dot{x} \tag{11.35}\]</div>
 <p>Completing the integration yields</p>
-<p>Equation 11.36</p>
 <div class="math notranslate nohighlight">
 \[\begin{array}{ll} \mathscr{E}_x(x) = \dfrac{-qN_A}{\epsilon_r\epsilon_0}(x +x_\mathrm{p}), &amp; \mathrm{for} \space -x_\mathrm{P} \leq x \leq 0 \end{array} \tag{11.36}\]</div>
 <p>Next, for the region between 0 and xn we have</p>
-<p>Equation 11.37</p>
 <div class="math notranslate nohighlight">
 \[ \frac{\mathrm{d}\mathscr{E}_x}{\mathrm{d}x} = \frac{qN_D}{\epsilon_r\epsilon_0} \tag{11.37}\]</div>
 <p>Again separating variables and integrating each side but this time fixing the upper bounds at <span class="math notranslate nohighlight">\(\mathscr{E}_x=0, x=x_n\)</span> and letting the lower bounds vary throughout the interval we have</p>
-<p>Equation 11.38</p>
 <div class="math notranslate nohighlight">
 \[ \int_{\mathscr{E}_x(x)}^{0} \mathrm{d}\dot{\mathscr{E}_x} = \int_{x}^{x_n} \frac{-qN_D}{\epsilon_r\epsilon_0} \mathrm{d}\dot{x} \tag{11.38}\]</div>
 <p>Completing the integration yields</p>
-<p>Equation 11.39</p>
 <div class="math notranslate nohighlight">
 \[\begin{array}{ll} \mathscr{E}_x(x) = \dfrac{-qN_D}{\epsilon_r\epsilon_0}(x_\mathrm{n}-x), &amp; \mathrm{for} \space 0 \leq x \leq x_\mathrm{n} \end{array} \tag{11.39}\]</div>
 <p>From the resulting expressions in equations (11.36) and (11.39) we see that the electric field in the depletion region is always negative and that it decreases linearly from <span class="math notranslate nohighlight">\(x = -x_p\)</span> until <span class="math notranslate nohighlight">\(x=0\)</span> and then increases linearly until <span class="math notranslate nohighlight">\(x=x_n\)</span>. If we assume that the electric field at the inflection point <span class="math notranslate nohighlight">\((x = 0)\)</span> is continuous, this means that (11.36) and (11.39) must be equal at x = 0. Hence,</p>
-<p>Equation 11.40</p>
 <div class="math notranslate nohighlight">
 \[\frac{-qN_A}{\epsilon_r\epsilon_0}x_\mathrm{P} = \frac{-qN_D}{\epsilon_r\epsilon_0}x_\mathrm{n} \tag{11.40}\]</div>
 <p>which can be simplified to</p>
-<p>Equation 11.41</p>
 <div class="math notranslate nohighlight">
 \[qN_Ax_\mathrm{P} = qN_Dx_\mathrm{n} \tag{11.41}\]</div>
-<p>…</p>
-<p>Equation 11.42</p>
+<p>Now we define the electric potential in the <span class="math notranslate nohighlight">\(x \leq -x_p\)</span> region to be zero volts. Due to the piecewise linear nature of our solution for <span class="math notranslate nohighlight">\(\mathscr{E}_x\)</span>, we break the integral of (11.10) into intervals. For the interval on the <span class="math notranslate nohighlight">\(p\)</span>-side of the junction, we let the upper bound vary through the extent of the interval resulting in</p>
 <div class="math notranslate nohighlight">
 \[ V ( x ) - V ( -x_\mathrm{P} ) = V ( x ) - 0 = \int_{-x_\mathrm{P}}^{x} \dfrac{qN_A}{\epsilon_r\epsilon_0} ( x_\mathrm{P} + \dot{x}) \mathrm{d}x \tag{11.42}\]</div>
-<p>Equation 11.43</p>
+<p>which upon completing the integration provides</p>
 <div class="math notranslate nohighlight">
 \[\begin{array}{ll} V ( x ) = \dfrac{qN_A}{2\epsilon_r\epsilon_0}(x_\mathrm{p}+x)^2, &amp; \mathrm{for} \space -x_\mathrm{P} \leq x \leq 0 \end{array} \tag{11.43}\]</div>
-<p>Equation 11.44</p>
+<p>For the interval on the <span class="math notranslate nohighlight">\(n\)</span>-side of the junction we vary the lower bound throughout the interval such that</p>
 <div class="math notranslate nohighlight">
 \[ V ( x_\mathrm{n} ) - V ( x ) = V_{\mathrm{bi}} - V ( x ) = \int_{-x_\mathrm{P}}^{x} \dfrac{qN_D}{\epsilon_r\epsilon_0} ( x_\mathrm{n} - \dot{x}) \mathrm{d}x \tag{11.44}\]</div>
-<p>Equation 11.45</p>
+<p>which upon completing the integration provides</p>
 <div class="math notranslate nohighlight">
 \[\begin{array}{ll} V ( x ) =  V_{\mathrm{bi}} - \dfrac{qN_D}{2\epsilon_r\epsilon_0}(x_\mathrm{n}-x)^2, &amp; \mathrm{for} \space 0 \leq x \leq x_\mathrm{n} \end{array} \tag{11.45}\]</div>
-<p>Equation 11.46</p>
+<p>Since the voltage is continuous we can set (11.43) equal to (11.45) at <span class="math notranslate nohighlight">\(x=0\)</span> to arrive at a second equation relating <span class="math notranslate nohighlight">\(x_p\)</span> and <span class="math notranslate nohighlight">\(x_n\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[ \frac{qN_A}{2\epsilon_r\epsilon_0} x_\mathrm{P}^2 = V_\mathrm{bi}-\frac{qN_D}{2\epsilon_r\epsilon_0}x_n^2 \tag{11.46}\]</div>
-<p>Equation 11.47</p>
+<p>Using (11.31) and (11.46) we can now express the <span class="math notranslate nohighlight">\(p-\)</span>side and <span class="math notranslate nohighlight">\(n-\)</span>side depletion widths (<span class="math notranslate nohighlight">\(x_p\)</span> and <span class="math notranslate nohighlight">\(x_n\)</span>) in terms of dopant levels.We begin by substituting the solution for <span class="math notranslate nohighlight">\(x_n\)</span> in terms of <span class="math notranslate nohighlight">\(x_p\)</span> from (11.31) into (11.46) resulting in</p>
 <div class="math notranslate nohighlight">
 \[ \frac{qN_A}{2\epsilon_r\epsilon_0} x_\mathrm{P}^2 = V_\mathrm{bi}-\frac{qN_D}{2\epsilon_r\epsilon_0}\frac{N_A^2}{N_D^2}x_\mathrm{P}^2 \tag{11.47}\]</div>
-<p>Equation 11.48</p>
+<p>With a bit more algebra we can solve for <span class="math notranslate nohighlight">\(x_p\)</span> to find</p>
 <div class="math notranslate nohighlight">
 \[ x_\mathrm{P} = \left[ \frac{2\epsilon_r\epsilon_0}{q} \left( \frac{N_D}{N_A (N_A + N_D )} \right) V_\mathrm{bi} \right]^{1/2} \tag{11.48}\]</div>
-<p>Equation 11.49</p>
+<p>Then by using (11.31) again we can also solve for <span class="math notranslate nohighlight">\(x_n\)</span> to find</p>
 <div class="math notranslate nohighlight">
 \[ x_\mathrm{n} = \frac{N_A}{N_D}x_\mathrm{P} = \left[ \frac{2\epsilon_r\epsilon_0}{q} \left( \frac{N_A}{N_D (N_A + N_D )} \right) V_\mathrm{bi} \right]^{1/2} \tag{11.49}\]</div>
-<p>Equation 11.50</p>
+<p>By expressing the depletion width on each side of the junction in terms of the dopant levels and physical parameters in (11.48) and(11.49),we have completely specified the depletion approximation.</p>
+<p>The total depletion region width, <span class="math notranslate nohighlight">\(W\)</span> can be defined as the sum of the <span class="math notranslate nohighlight">\(p\)</span>-side and <span class="math notranslate nohighlight">\(n\)</span>-side depletion region widths.</p>
 <div class="math notranslate nohighlight">
 \[ W = x_\mathrm{P} + x_\mathrm{n} \tag{11.50}\]</div>
-<p>Equation 11.51</p>
+<p>By choosing a common denominator in the expressions for <span class="math notranslate nohighlight">\(x_p\)</span> and <span class="math notranslate nohighlight">\(x_n\)</span>, and combining like terms, (11.50) can be written as</p>
 <div class="math notranslate nohighlight">
 \[ W = \left[ \frac{2\epsilon_r\epsilon_0}{q}\right]^{1/2} \left( \frac{N_D+N_A}{[N_AN_D (N_A + N_D )]^{1/2}} \right) V_\mathrm{bi}^{1/2}  \tag{11.51}\]</div>
-<p>Equation 11.52</p>
+<p>Then by cancelling a factor of <span class="math notranslate nohighlight">\(\sqrt{N_A + N_D}\)</span> and grouping all the terms under same square root we arrive at</p>
 <div class="math notranslate nohighlight">
 \[ W = \left[ \frac{2\epsilon_r\epsilon_0}{q} \left( \frac{N_D+N_A}{N_AN_D} \right) V_\mathrm{bi} \right]^{1/2}  \tag{11.52}\]</div>
 </section>
 <section id="band-bending">
 <h2>Band Bending<a class="headerlink" href="#band-bending" title="Link to this heading">#</a></h2>
-<p>Equation 11.53</p>
+<p>To begin we relate voltage to energy by noting that the electric potential <span class="math notranslate nohighlight">\(V\)</span> is equivalent to the electric potential energy (P.E.) per unit of charge at a given point in an electric field. Hence,</p>
 <div class="math notranslate nohighlight">
 \[ V= \frac{P.E.}{q} \tag{11.53}\]</div>
-<p>Equation 11.54</p>
+<p>where <span class="math notranslate nohighlight">\(q\)</span> is the elementary charge <span class="math notranslate nohighlight">\((1.6 \times 10^{-19} C)\)</span>. For an electron with charge <span class="math notranslate nohighlight">\(-q\)</span> we can write its electrical potential energy in terms of the electric potential as</p>
 <div class="math notranslate nohighlight">
 \[ P.E. = -qV \tag{11.54} \]</div>
 </section>
 <section id="i-v-characteristics">
 <h2><span class="math notranslate nohighlight">\(I\)</span>-<span class="math notranslate nohighlight">\(V\)</span> Characteristics<a class="headerlink" href="#i-v-characteristics" title="Link to this heading">#</a></h2>
-<p>Equation 11.55</p>
+<p>The difference in potential between the <span class="math notranslate nohighlight">\(n\)</span>-side and the <span class="math notranslate nohighlight">\(p\)</span>-side of the junction is given by <span class="math notranslate nohighlight">\(V_{bi} - V_A\)</span> from which we see that a positive applied voltage reduces the potential difference between the two sides whereas a negative applied voltage increases it. A positive applied voltage decreases the depletion width whereas a negative applied voltage increases it. Equations (11.48), (11.49), and (11.52) for depletion widths in an isolated <span class="math notranslate nohighlight">\(pn\)</span> junction can be generalized to account for the applied voltage by replacing <span class="math notranslate nohighlight">\(V_{bi}\)</span> in each equation with a <span class="math notranslate nohighlight">\(V_{bi} - V_A\)</span> such that</p>
 <div class="math notranslate nohighlight">
-\[ x_p = \left[ \frac{2\epsilon_r\epsilon_0}{q} \frac{N_D}{N_A(N_A + N_D)}(Vbi - V_A)\right]^{1/2} \tag{11.55} \]</div>
-<p>Equation 11.56</p>
+\[ x_p = \left[ \frac{2\epsilon_r\epsilon_0}{q} \frac{N_D}{N_A(N_A + N_D)}(Vbi - V_A)\right]^{1/2} \tag{11.55} ,\]</div>
 <div class="math notranslate nohighlight">
-\[ x_n = \left[ \frac{2\epsilon_r\epsilon_0}{q} \frac{N_A}{N_D(N_A + N_D)}(Vbi - V_A)\right]^{1/2} \tag{11.56} \]</div>
-<p>Equation 11.57</p>
+\[ x_n = \left[ \frac{2\epsilon_r\epsilon_0}{q} \frac{N_A}{N_D(N_A + N_D)}(Vbi - V_A)\right]^{1/2} \tag{11.56} ,\]</div>
+<p>and</p>
 <div class="math notranslate nohighlight">
-\[ W = \left[ \frac{2\epsilon_r\epsilon_0}{q} \left (\frac{N_A + N_D}{N_AN_D}\right )(Vbi - V_A)\right]^{1/2} \tag{11.57} \]</div>
-<p>Equation 11.58</p>
+\[ W = \left[ \frac{2\epsilon_r\epsilon_0}{q} \left (\frac{N_A + N_D}{N_AN_D}\right )(Vbi - V_A)\right]^{1/2} \tag{11.57}\]</div>
+<p>Mathematically, the complite <span class="math notranslate nohighlight">\(i-v\)</span> characteristic curve for an ideal <span class="math notranslate nohighlight">\(pn\)</span> junction diode is given by</p>
 <div class="math notranslate nohighlight">
 \[ I=I_0 (e^{\frac{qV_A}{kT}}-1) \tag{11.58}\]</div>
 </section>
