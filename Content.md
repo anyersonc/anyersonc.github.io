@@ -1,10 +1,20 @@
-# Index of contents
+# Introduction
 
-This notebook will explore the properties and behavior of the PN junction, which is formed by the union of p-type and n-type semiconductor materials. We will start by understanding the formation and characteristics of the depletion region, which is a crucial aspect of the PN junction. 
+This notebook will explore the properties and behavior of the PN junction and its further application to the MOSFET.
 
-Then, we will examine the energy band diagrams to visualize the movement of charge carriers and the resulting current flow across the junction. Finally, we will learn how to sketch the current-voltage (I-V) characteristic curve of a PN junction, which is a graphical representation of the relationship between the applied voltage and the resulting current flow. This curve is essential for understanding the rectifying behavior of a PN junction, which forms the basis for its use in various electronic applications. 
+## PN Junction
+The $pn$ junction is formed by the union of p-type and n-type semiconductor materials. We will start by understanding the formation and characteristics of the depletion region, which is a crucial aspect of the $pn$ junction. 
 
-Throughout this notebook, we will use a combination of theoretical explanations, graphical visualizations, and numerical examples to reinforce the concepts and develop a solid understanding of the PN junction's operation and characteristics. To begin reviewing the material in this notebook, please select the Introduction to PN junctions page.
+We will start by exploring the fundamentals of p-type and n-type semiconductors. Understanding their individual properties is crucial for grasping how they work together in a $pn$ junction. Next, we will dive into the mechanics of the pn junction, examining how the combination of p-type and n-type semiconductors creates a unique and essential electronic component.
 
+You will learn to sketch the $I-V$ characteristic of a pn junction and understand the behavior of current in relation to electron and hole movements. By the end of this book, you will be able to analyze and comprehend the intricate workings of diodes and transistors in electronic circuits. 
+
+Let's embark on this exciting journey into the world of semiconductors by clicking on **Introduction to PN junctions** under **Index of contents**.
+
+## MOSFET
+
+Describe MOSFET
+
+# Index of Contents
 ```{tableofcontents}
 ```

@@ -3,7 +3,17 @@
 
 format: jb-book
 root: Content
-chapters:
-- file: PNjunction
-- file: workedexample
-- file: References
+parts:
+- caption: PN JUNCTION
+  chapters:
+  - file: PNjunction
+  - file: workedexample
+
+- caption: MOSFETS
+  chapters:
+  - file: Mosfet
+  - file: workedexampleMosfet
+
+- caption: REFERENCES
+  chapters:
+  - file: References

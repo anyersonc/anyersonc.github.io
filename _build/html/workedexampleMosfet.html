@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Introduction &#8212; My sample book</title>
+    <title>Worked example &#8212; My sample book</title>
   
   
   
@@ -59,10 +59,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Content';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'workedexampleMosfet';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Introduction to PN junctions" href="PNjunction.html" />
+    <link rel="next" title="References" href="References.html" />
+    <link rel="prev" title="MOSFET Transistor structure and operation I" href="Mosfet.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -124,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -142,7 +141,7 @@
 
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="Content.html">
   
   
   
@@ -173,8 +172,8 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="Content.html">
                     Introduction
                 </a>
             </li>
@@ -185,9 +184,9 @@
 <li class="toctree-l1"><a class="reference internal" href="workedexample.html">Worked example</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">MOSFETS</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Mosfet.html">MOSFET Transistor structure and operation I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workedexampleMosfet.html">Worked example</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Worked example</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">REFERENCES</span></p>
 <ul class="nav bd-sidenav">
@@ -263,7 +262,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FContent.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FworkedexampleMosfet.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +292,7 @@
       
       
       
-      <li><a href="_sources/Content.md" target="_blank"
+      <li><a href="_sources/workedexampleMosfet.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -303,7 +302,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.md</span>
+<span class="btn__text-container">.ipynb</span>
 </a>
 </li>
       
@@ -377,7 +376,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Introduction</h1>
+    <h1>Worked example</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -387,16 +386,21 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pn-junction">PN Junction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mosfet">MOSFET</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#input-parameters">Input Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-procedure">Step by Step procedure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-enter-to-nanohub">(a) Enter to Nanohub</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-find-the-temperature-parameter">(b) Find the temperature parameter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-check-the-current-temperature-and-change-it">(c) Check the current temperature and change it</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-choose-the-first-temperature-t-1">(d) Choose the first temperature <span class="math notranslate nohighlight">\(T_1\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-simulate-the-first-temperature-t-1">(e) Simulate the first temperature <span class="math notranslate nohighlight">\(T_1\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-check-if-the-simulation-produces-coherent-curves">(f) Check if the simulation produces coherent curves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g-choose-the-second-temperature-t-2">(g) Choose the second temperature <span class="math notranslate nohighlight">\(T_2\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#h-check-if-the-simulation-produces-coherent-curves">(h) Check if the simulation produces coherent curves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i-overlap-the-curves-for-comparison-and-analysis">(i) Overlap the curves for comparison and analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effect-of-the-temperature-on-the-mosfet-behavior">Effect of the temperature on the MOSFET behavior</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#index-of-contents">Index of Contents</a><ul class="visible nav section-nav flex-column">
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -407,43 +411,94 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
-<p>This notebook will explore the properties and behavior of the PN junction and its further application to the MOSFET.</p>
-<section id="pn-junction">
-<h2>PN Junction<a class="headerlink" href="#pn-junction" title="Link to this heading">#</a></h2>
-<p>The <span class="math notranslate nohighlight">\(pn\)</span> junction is formed by the union of p-type and n-type semiconductor materials. We will start by understanding the formation and characteristics of the depletion region, which is a crucial aspect of the <span class="math notranslate nohighlight">\(pn\)</span> junction.</p>
-<p>We will start by exploring the fundamentals of p-type and n-type semiconductors. Understanding their individual properties is crucial for grasping how they work together in a <span class="math notranslate nohighlight">\(pn\)</span> junction. Next, we will dive into the mechanics of the pn junction, examining how the combination of p-type and n-type semiconductors creates a unique and essential electronic component.</p>
-<p>You will learn to sketch the <span class="math notranslate nohighlight">\(I-V\)</span> characteristic of a pn junction and understand the behavior of current in relation to electron and hole movements. By the end of this book, you will be able to analyze and comprehend the intricate workings of diodes and transistors in electronic circuits.</p>
-<p>Let’s embark on this exciting journey into the world of semiconductors by clicking on <strong>Introduction to PN junctions</strong> under <strong>Index of contents</strong>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="worked-example">
+<h1>Worked example<a class="headerlink" href="#worked-example" title="Link to this heading">#</a></h1>
+<p>Now go to <a href="https://nanohub.org/tools/mosfet" target="_blank" rel="noopener noreferrer">NanoHub MOSFet</a> to access the simulation tool.</p> 
+<p>For accessing, recall the <span class="math notranslate nohighlight">\(pn\)</span> junctions worked example for entering into Nanohub simulations.</p>
+<p>The objective of this activity is to find the effect on the <span class="math notranslate nohighlight">\(I_\mathrm{D}-V_\mathrm{D}\)</span> curve characteristic caused by the temperature. Follow the next steps to get the results.</p>
+<section id="input-parameters">
+<h2>Input Parameters<a class="headerlink" href="#input-parameters" title="Link to this heading">#</a></h2>
+<p>In this simulation we only are going to modify the temperature with the standard value to observe the isolated effect of the temperature on the device behavior.</p>
+<p><span class="math notranslate nohighlight">\(T_1= 200 \mathrm{K}\)</span></p>
+<p><span class="math notranslate nohighlight">\(T_2= 400 \mathrm{K}\)</span></p>
 </section>
-<section id="mosfet">
-<h2>MOSFET<a class="headerlink" href="#mosfet" title="Link to this heading">#</a></h2>
-<p>Describe MOSFET</p>
+<section id="step-by-step-procedure">
+<h2>Step by Step procedure<a class="headerlink" href="#step-by-step-procedure" title="Link to this heading">#</a></h2>
+<section id="a-enter-to-nanohub">
+<h3>(a) Enter to Nanohub<a class="headerlink" href="#a-enter-to-nanohub" title="Link to this heading">#</a></h3>
+<p>Enter into NanoHub and clic on “Launch tool.”</p>
+<center>
+<img src="https://raw.githubusercontent.com/anyersonc/anyersonc.github.io/main/NanoMos.png" alt='Image nanohub'>
+</center>
+</section>
+<section id="b-find-the-temperature-parameter">
+<h3>(b) Find the temperature parameter<a class="headerlink" href="#b-find-the-temperature-parameter" title="Link to this heading">#</a></h3>
+<p>In the tool, clic on the “Model” tab in the part above. It is the middle tab in the tool.</p>
+<center>
+<img src="https://raw.githubusercontent.com/anyersonc/anyersonc.github.io/main/Mos1.png" alt='Image nanohub'>
+</center>
+</section>
+<section id="c-check-the-current-temperature-and-change-it">
+<h3>(c) Check the current temperature and change it<a class="headerlink" href="#c-check-the-current-temperature-and-change-it" title="Link to this heading">#</a></h3>
+<p>Now in the Model tab, we find the Temperature option. You should clic on that for accessing the temperature change. Note that the temperature is in Kelvin, <span class="math notranslate nohighlight">\(\mathrm{K}\)</span>, units.</p>
+<center>
+<img src="https://raw.githubusercontent.com/anyersonc/anyersonc.github.io/main/Mos2.png" alt='Image nanohub'>
+</center>
+</section>
+<section id="d-choose-the-first-temperature-t-1">
+<h3>(d) Choose the first temperature <span class="math notranslate nohighlight">\(T_1\)</span><a class="headerlink" href="#d-choose-the-first-temperature-t-1" title="Link to this heading">#</a></h3>
+<p>Select the option or write the option of the temperature for the simulation, remember that for this case <span class="math notranslate nohighlight">\(T_1=200\mathrm{K}\)</span></p>
+<center>
+<img src="https://raw.githubusercontent.com/anyersonc/anyersonc.github.io/main/Mos3.png" alt='Image nanohub'>
+</center>
+</section>
+<section id="e-simulate-the-first-temperature-t-1">
+<h3>(e) Simulate the first temperature <span class="math notranslate nohighlight">\(T_1\)</span><a class="headerlink" href="#e-simulate-the-first-temperature-t-1" title="Link to this heading">#</a></h3>
+<p>Once selected, clic on simulate for obtaining the curves.</p>
+<center>
+<img src="https://raw.githubusercontent.com/anyersonc/anyersonc.github.io/main/Mos4.png" alt='Image nanohub'>
+</center>
+</section>
+<section id="f-check-if-the-simulation-produces-coherent-curves">
+<h3>(f) Check if the simulation produces coherent curves<a class="headerlink" href="#f-check-if-the-simulation-produces-coherent-curves" title="Link to this heading">#</a></h3>
+<p>The simulation must provide two curves, one red and one blue, that must represent the behavior expected of a MOSFET with a gate voltage <span class="math notranslate nohighlight">\(V_\mathrm{G} \gt V_\mathrm{T}\)</span>. In the red curve we will find the case of <span class="math notranslate nohighlight">\(V_\mathrm{D} \lt V_\mathrm{D_\mathrm{sat}}\)</span> and in the blue curve we will find the case for <span class="math notranslate nohighlight">\(V_\mathrm{D} \gt V_\mathrm{D_\mathrm{sat}}\)</span>.</p>
+<center>
+<img src="https://raw.githubusercontent.com/anyersonc/anyersonc.github.io/main/Mos5.png" alt='Image nanohub'>
+</center>
+</section>
+<section id="g-choose-the-second-temperature-t-2">
+<h3>(g) Choose the second temperature <span class="math notranslate nohighlight">\(T_2\)</span><a class="headerlink" href="#g-choose-the-second-temperature-t-2" title="Link to this heading">#</a></h3>
+<p>For the second case, we will simulate in the same simulation, we will not terminate or restart the tool. Now, choosing for the second temperature <span class="math notranslate nohighlight">\(T_2=400\mathrm{K}\)</span>.</p>
+<center>
+<img src="https://raw.githubusercontent.com/anyersonc/anyersonc.github.io/main/Mos6.png" alt='Image nanohub'>
+</center>
+</section>
+<section id="h-check-if-the-simulation-produces-coherent-curves">
+<h3>(h) Check if the simulation produces coherent curves<a class="headerlink" href="#h-check-if-the-simulation-produces-coherent-curves" title="Link to this heading">#</a></h3>
+<p>The simulation must provide two curves, one red and one blue, that must represent the behavior expected of a MOSFET with a gate voltage <span class="math notranslate nohighlight">\(V_\mathrm{G} \gt V_\mathrm{T}\)</span>. In the red curve we will find the case of <span class="math notranslate nohighlight">\(V_\mathrm{D} \lt V_\mathrm{D_\mathrm{sat}}\)</span> and in the blue curve we will find the case for <span class="math notranslate nohighlight">\(V_\mathrm{D} \gt V_\mathrm{D_\mathrm{sat}}\)</span>.</p>
+<center>
+<img src="https://raw.githubusercontent.com/anyersonc/anyersonc.github.io/main/Mos7.png" alt='Image nanohub'>
+</center>
+</section>
+<section id="i-overlap-the-curves-for-comparison-and-analysis">
+<h3>(i) Overlap the curves for comparison and analysis<a class="headerlink" href="#i-overlap-the-curves-for-comparison-and-analysis" title="Link to this heading">#</a></h3>
+<p>Now with the option in the right inferior side, clic on “All” for plotting the two results at the same time. Now it is posible to compare the two cases and produce an analysis about the effect of the temperature on the behavior of a MOSFET.</p>
+<center>
+<img src="https://raw.githubusercontent.com/anyersonc/anyersonc.github.io/main/Mos8.png" alt='Image nanohub'>
+</center>
+</section>
+<section id="effect-of-the-temperature-on-the-mosfet-behavior">
+<h3>Effect of the temperature on the MOSFET behavior<a class="headerlink" href="#effect-of-the-temperature-on-the-mosfet-behavior" title="Link to this heading">#</a></h3>
+<p><label for="freeform">Write a short analysis that includes how the temperature affects the MOSFET behavior, consider the carriers, diffusion, the electron movement, and holes movement, consider also if possible any other characteristic that could be affected by the temperature at the atomic level. (Write a short paragraph of maximum 200 words. Use your own words):</label>
+<br></p>
+<center>
+<textarea id="freeform" name="freeform" rows="4" cols="80">
+Answer here:
+</textarea>
+</center><hr class="docutils" />
+<p>Congratulations! You have completed the second module: MOSFET Introdution.</p>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="index-of-contents">
-<h1>Index of Contents<a class="headerlink" href="#index-of-contents" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">PN JUNCTION</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="PNjunction.html">Introduction to PN junctions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workedexample.html">Worked example</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">MOSFETS</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Mosfet.html">MOSFET Transistor structure and operation I</a></li>
-<li class="toctree-l1"><a class="reference internal" href="workedexampleMosfet.html">Worked example</a></li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">REFERENCES</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="References.html">References</a></li>
-</ul>
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -476,12 +531,21 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Mosfet.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">MOSFET Transistor structure and operation I</p>
+      </div>
+    </a>
     <a class="right-next"
-       href="PNjunction.html"
+       href="References.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction to PN junctions</p>
+        <p class="prev-next-title">References</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -501,16 +565,21 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Introduction</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pn-junction">PN Junction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mosfet">MOSFET</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#input-parameters">Input Parameters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-procedure">Step by Step procedure</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-enter-to-nanohub">(a) Enter to Nanohub</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#b-find-the-temperature-parameter">(b) Find the temperature parameter</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-check-the-current-temperature-and-change-it">(c) Check the current temperature and change it</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-choose-the-first-temperature-t-1">(d) Choose the first temperature <span class="math notranslate nohighlight">\(T_1\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#e-simulate-the-first-temperature-t-1">(e) Simulate the first temperature <span class="math notranslate nohighlight">\(T_1\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f-check-if-the-simulation-produces-coherent-curves">(f) Check if the simulation produces coherent curves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#g-choose-the-second-temperature-t-2">(g) Choose the second temperature <span class="math notranslate nohighlight">\(T_2\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#h-check-if-the-simulation-produces-coherent-curves">(h) Check if the simulation produces coherent curves</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#i-overlap-the-curves-for-comparison-and-analysis">(i) Overlap the curves for comparison and analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#effect-of-the-temperature-on-the-mosfet-behavior">Effect of the temperature on the MOSFET behavior</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#index-of-contents">Index of Contents</a><ul class="visible nav section-nav flex-column">
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
