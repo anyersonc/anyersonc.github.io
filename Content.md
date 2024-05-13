@@ -13,7 +13,15 @@ Let's embark on this exciting journey into the world of semiconductors by clicki
 
 ## MOSFET
 
-Describe MOSFET
+This chapter provides a comprehensive overview of MOSFETs (Metal-Oxide-Semiconductor Field-Effect Transistors), which are essential components in modern electronics. 
+
+We will explore the structure and operation of MOSFETs, including their four-terminal design and how voltage applied across two terminals controls the current through the other two. We will delve into the ideal diode model and the constant voltage drop model to understand diode behavior, which lays the foundation for grasping MOSFET functionality. 
+
+We will also examine the MOS-C (Metal-Oxide-Semiconductor-Capacitor), crucial for field-effect devices, and discuss the MOSFET operating principles, such as the creation of an inversion layer that allows current flow when the device is "on." The content will cover the I-V characteristics of MOSFETs, showing how the gate voltage influences the drain current. By the end of this course, you will be equipped to analyze electronic circuits with diodes and transistors, calculate voltages, currents, and power consumption, and understand the different regions of operation for MOSFETs. 
+
+Let's embark on this exciting journey into the world of MOSFETs by clicking on **MOSFET Transistor structure and operation I** under **Index of contents**.
+
+---
 
 # Index of Contents
 ```{tableofcontents}
